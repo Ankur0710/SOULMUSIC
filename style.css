@@ -57,6 +57,7 @@ div .clickbutton:hover {
     -ms-transform: scale(1.2);
     transform: scale(1.2);
     transition: 1s ease;
+    cursor: pointer;
 }
 
 .brandicons li {
