@@ -1,5 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap');
 
+/* this style for preloader */
+#loader {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    background-color: #eab676;
+}
+
+h3 {
+    font-family: sans-serif;
+}
+
+
+svg {
+    width: 50px;
+    fill: #21130d;
+}
+
+#first {
+    animation: move 0.5s linear infinite;
+    animation-direction: alternate-reverse;
+    position: relative;
+}
+
+#second {
+    animation: move 0.5s linear infinite;
+    animation-direction: alternate-reverse;
+    animation-delay: 0.22s;
+    position: relative;
+}
+
+#third {
+    animation: move 0.5s linear infinite;
+    animation-direction: alternate-reverse;
+    animation-delay: 0.4s;
+    position: relative;
+}
+
+@keyframes move {
+    from {
+        top: -15px;
+        fill-opacity: 0.1;
+
+    }
+
+    to {
+        top: 0;
+        fill-opacity: 1;
+    }
+}
+/* preloader style ends here */
 div ul .items a {
     color: white;
     font-size: larger;
@@ -64,7 +120,8 @@ div .clickbutton:hover {
     padding-right: 10px;
     padding-left: 10px;
 }
-.brandicons li:hover{
+
+.brandicons li:hover {
     box-shadow: 2px 7px 44px 4px rgba(255, 57, 57, 0.989);
     background-color: #fc0254;
     border-radius: 20px;
